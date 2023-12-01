@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Nota Fiscal de Serviço</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container__title">
+            <h1>Calculadora de Nota Fiscal de Serviço</h1>
+        </div>
+        <div class="container__form">
+            <label for="tomadorServico">Tomador do Serviço:<strong>*</strong></label>
+            <input type="text" id="tomadorServico" placeholder="Nome do Tomador do Serviço" required>
+
+            <label for="estadoCidade">Estado, Cidade:<strong>*</strong></label>
+            <input type="text" id="estadoCidade" placeholder="Estado, Cidade" required>
+
+            <label for="enderecoCompleto">Endereço Completo:<strong>*</strong></label>
+            <input type="text" id="enderecoCompleto" placeholder="Endereço Completo" required>
+
+            <label for="cnpjCpf">CNPJ/CPF:<strong>*</strong></label>
+            <input type="text" id="cnpjCpf" placeholder="CNPJ/CPF" required>
+
+            <label for="inscricaoMunicipal">Inscrição Municipal:<strong>*</strong></label>
+            <input type="text" id="inscricaoMunicipal" placeholder="Inscrição Municipal" required>
+
+            <label for="descricaoServicos">Descrição dos Serviços:</label>
+            <textarea id="descricaoServicos" placeholder="Descreva os serviços prestados"></textarea>
+
+            <label for="precoUnitario">Preço Unitário:<strong>*</strong></label>
+            <input type="number" id="precoUnitario" placeholder="Preço Unitário" required>
+
+            <label for="quantidade">Quantidade:<strong>*</strong></label>
+            <input type="number" id="quantidade" placeholder="Quantidade" required>
+
+            <button onclick="calcularNotaFiscal()">Calcular</button>
+        </div>
+        <div class="container__notaFiscal">
+            <h2>Resultado:</h2>
+                <div id="resultado"></div>
+        </div>
+    </div>
+    
+    <script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+*{
+    font-family: 'Segoe UI', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px;
+    display: grid;
+    place-items: center;
+}
+
+.container__title {
+    padding: 35px;
+}
+
+h1 {
+    font-weight: 750;
+}
+
+.container__form, .container__notaFiscal {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    min-width: 700px;
+    border-radius: 20px;
+    margin: 25px;
+    padding: 20px;
+}
+
+label {
+    font-weight: 500;
+}
+
+input, textarea {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+strong {
+    color: red;
+    font-weight: bold;
+}
+
+button {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 250px;
+    align-self: center;
+}
+
+h2 {
+    margin: 10px 0;
+}
